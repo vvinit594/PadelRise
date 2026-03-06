@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/layout/Header";
-import { Navbar } from "@/components/layout/Navbar";
+import { ConditionalHeader } from "@/components/layout/ConditionalHeader";
 import { LenisProvider } from "@/components/LenisProvider";
 import { PageTransition } from "@/components/layout/PageTransition";
 
@@ -33,10 +32,7 @@ export default function RootLayout({
       >
         <LenisProvider>
           <div className="flex min-h-screen flex-col">
-            <Header />
-            <div className="w-full border-t border-white/20" />
-            <Navbar />
-            <div className="w-full border-t border-white/20" />
+            <ConditionalHeader />
             <main className="flex-1">
             <PageTransition>{children}</PageTransition>
           </main>

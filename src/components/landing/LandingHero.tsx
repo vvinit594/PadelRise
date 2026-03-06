@@ -11,7 +11,7 @@ export function LandingHero() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col items-center justify-center px-4 py-16"
+      className="flex min-h-[60vh] flex-col items-center justify-center px-4 py-16"
     >
       {/* Logo */}
       <div className="mb-6 flex justify-center">

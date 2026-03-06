@@ -3,7 +3,7 @@ import { FeatureCards } from "@/components/landing/FeatureCards";
 
 export default function Home() {
   return (
-    <div className="flex min-h-[calc(100vh-200px)] flex-col">
+    <div className="flex min-h-screen flex-col">
       <LandingHero />
       <FeatureCards />
     </div>
